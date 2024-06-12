@@ -1,0 +1,60 @@
+.card {
+  background: #fff;
+  border-radius: 32px;
+  padding: 8px;
+  max-width: 244px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.image {
+  width: 100%;
+  height: 242px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.link {
+  text-decoration: none;
+  width: 56px;
+  height: 56px;
+  color: #343a40;
+  border: 2px solid #343a40;
+  background: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.linkIcon {
+  display: flex;
+}
+
+.git {
+  border-color: #24292e;
+}
+
+.solution {
+  border-color: #f0402c;
+}
+
+.action {
+  background: #343a40;
+  color: #fff;
+}

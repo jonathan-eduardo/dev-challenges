@@ -1,0 +1,12 @@
+{
+  "challenges": [
+    {
+      "id": 0,
+      "title": "Minimal Blog Card",
+      "slug": "minimal-blog-card",
+      "image_src": "./thumbnails/minimal-blog-card.png",
+      "solution_link": "https://devchallenges.io/solution/20221",
+      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/minimal-blog-card"
+    }
+  ]
+}
