@@ -7,6 +7,14 @@
       "image_src": "./thumbnails/minimal-blog-card.png",
       "solution_link": "https://devchallenges.io/solution/20221",
       "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/minimal-blog-card"
+    },
+    {
+      "id": 1,
+      "title": "Business Blog Card",
+      "slug": "business-blog-card",
+      "image_src": "./thumbnails/business-blog-card.png",
+      "solution_link": "https://devchallenges.io/solution/24877",
+      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/business-blog-card"
     }
   ]
 }
