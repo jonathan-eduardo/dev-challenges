@@ -2,9 +2,9 @@ import styles from './testimonial-page.module.css'
 import starSrc from '../images/star_icon.png'
 import googleImgSrc from '../images/google-testimonial.png'
 import metaImgSrc from '../images/meta-testimonial.png'
-import DoneRing from '../images/Done_ring_round_fill.svg?react'
-import StarFill from '../images/Star_fill.svg?react'
-import StarGray from '../images/Star_fill_gray.svg?react'
+import DoneRing from '../images/Done_ring_round_fill.svg'
+import StarFill from '../images/Star_fill.svg'
+import StarGray from '../images/Star_fill_gray.svg'
 
 export default function TestimonialPage() {
   return (
