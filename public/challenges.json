@@ -1,7 +1,7 @@
 {
   "challenges": [
     {
-      "id": 0,
+      "id": 20221,
       "title": "Minimal Blog Card",
       "slug": "minimal-blog-card",
       "image_src": "./thumbnails/minimal-blog-card.png",
@@ -9,12 +9,20 @@
       "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/minimal-blog-card"
     },
     {
-      "id": 1,
+      "id": 24877,
       "title": "Business Blog Card",
       "slug": "business-blog-card",
       "image_src": "./thumbnails/business-blog-card.png",
       "solution_link": "https://devchallenges.io/solution/24877",
       "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/business-blog-card"
+    },
+    {
+      "id": 25089,
+      "title": "Testimonial Page",
+      "slug": "testimonial-page",
+      "image_src": "./thumbnails/testimonial-page.png",
+      "solution_link": "https://devchallenges.io/solution/25089",
+      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/testimonial-page"
     }
   ]
 }

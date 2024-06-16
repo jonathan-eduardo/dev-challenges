@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+.background {
+  --white: #ffffff;
+  --soft-white: #fafaf9;
+  --gray: #52525a;
+  --dark-gray: #18181b;
+  --action-yellow: #f5c044;
+
+  font-family: 'Sora', sans-serif;
+
+  background: var(--soft-white);
+  min-height: 100vh;
+  flex-wrap: wrap;
+  gap: 54px;
+}
+
+.starIcon {
+  width: 46px;
+  height: 46px;
+  background: var(--action-yellow);
+  border-radius: 50%;
+  margin-bottom: 22px;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  max-width: 552px;
+  letter-spacing: -0.01rem;
+}
+
+.title {
+  margin-bottom: 22px;
+  font-size: 36px;
+  line-height: 1;
+  color: var(--dark-gray);
+}
+
+.description {
+  font-size: 20px;
+  line-height: 1.75;
+  color: var(--gray);
+  margin-bottom: 36px;
+}
+
+.benefits {
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.benefit {
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--gray);
+}
+
+.testimonials {
+  width: 552px;
+  max-width: 552px;
+  gap: 40px;
+}
+
+.testimonial {
+  background: var(--white);
+  padding: 30px 40px;
+  border-radius: 12px;
+  max-width: 357px;
+  max-height: 188px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.01);
+}
+
+.alignRight {
+  align-self: flex-end;
+}
+
+.header {
+  display: flex;
+  gap: 18px;
+}
+
+.companyImage {
+  height: 30px;
+}
+
+.rating {
+  display: flex;
+}
+
+.reviewer {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-gray);
+  line-height: 1;
+  margin: 20px 0 10px;
+}
+
+.review {
+  line-height: 1.75;
+  color: var(--gray);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 720px) {
+  .info,
+  .testimonials {
+    margin: 16px 32px;
+  }
+}
