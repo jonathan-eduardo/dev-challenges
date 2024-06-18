@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500;700&display=swap');
+
+.background {
+  --default-font: 'Be Vietnam Pro', sans-serif;
+  --purple-blue: #4036a9;
+  --dark-blue: #111729;
+  --light-gray: #f8fafc;
+  --gray: #cdd5e0;
+  --white: #ffffff;
+
+  background-image: url('../images/bg-image.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--dark-blue);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: var(--default-font);
+}
+
+.page {
+  width: 1280px;
+}
+
+.header {
+  padding: 20px 72px;
+}
+
+.title {
+  font-size: 64px;
+  line-height: 5rem;
+  margin-top: 24px;
+  font-weight: 700;
+  letter-spacing: -0.16px;
+}
+
+.subtitle {
+  font-size: 32px;
+  line-height: 3rem;
+  margin-top: 16px 0 72px;
+  font-weight: 500;
+  letter-spacing: -0.16px;
+}
+
+.main {
+  text-align: center;
+  color: var(--white);
+}
+
+.form {
+  padding: 32px;
+  margin: 72px auto;
+  max-width: 810px;
+  border-radius: 24px;
+  background: rgba(174, 161, 195, 0.3);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  margin-bottom: 26px;
+}
+
+.label {
+  font-size: 14px;
+  line-height: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.16px;
+}
+
+.input,
+.select,
+.textarea {
+  font-size: 16px;
+  line-height: 1rem;
+  font-weight: 500;
+
+  font-family: var(--default-font);
+  border: none;
+  width: 364px;
+  height: 68px;
+  border-radius: 16px;
+  padding: 22px;
+  outline: none;
+  color: var(--dark-blue);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--gray);
+}
+
+.select {
+  appearance: none;
+  background-image: url('../images/Expand_down.svg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 24px) center;
+  padding: 0 22px;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+.textarea {
+  width: 100%;
+  height: 206px;
+  color: var(--dark-blue);
+  resize: none;
+}
+
+.fullWidth {
+  flex: 1;
+}
+
+.submitButton {
+  font-family: var(--default-font);
+  background: var(--light-gray);
+  font-size: 20px;
+  width: 100%;
+  line-height: 1.25rem;
+  font-weight: 700;
+  border: none;
+  padding: 26px;
+  border-radius: 16px;
+  color: var(--purple-blue);
+  cursor: pointer;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  box-shadow: 0 0 0px 2px var(--dark-blue);
+}

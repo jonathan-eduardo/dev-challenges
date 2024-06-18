@@ -23,6 +23,14 @@
       "image_src": "./thumbnails/testimonial-page.png",
       "solution_link": "https://devchallenges.io/solution/25089",
       "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/testimonial-page"
+    },
+    {
+      "id": 25343,
+      "title": "Contact Page",
+      "slug": "contact-page",
+      "image_src": "./thumbnails/contact-page.png",
+      "solution_link": "https://devchallenges.io/solution/25343",
+      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/contact-page"
     }
   ]
 }
