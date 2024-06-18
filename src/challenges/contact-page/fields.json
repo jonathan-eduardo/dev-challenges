@@ -21,6 +21,7 @@
       "id": "company",
       "name": "company",
       "elementType": "select",
+      "type": "",
       "options": [
         { "option": "10-50 employees" },
         { "option": "50-100 employees" },
@@ -33,6 +34,8 @@
       "id": "subject",
       "name": "subject",
       "elementType": "select",
+      "type": "",
+
       "options": [
         { "option": "Building Landing Pages" },
         { "option": "Single Page Applications" },
@@ -43,6 +46,8 @@
       "label": "Message",
       "id": "message",
       "name": "message",
+      "type": "",
+
       "placeholder": "Enter your message",
       "elementType": "textarea"
     }

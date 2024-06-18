@@ -3,8 +3,21 @@ import ContactFormIcon from '../images/contact-form-icon.svg'
 import { useEffect, useState } from 'react'
 import data from './fields.json'
 
+type Field = {
+  label: string
+  id: string
+  name: string
+  placeholder?: string
+  elementType: string
+  type: string
+  options?: Option[]
+}
+type Option = {
+  option: string
+}
+
 export default function ContactPage() {
-  const [fields, setFields] = useState([])
+  const [fields, setFields] = useState<Field[]>([])
 
   useEffect(() => {
     setFields(data.fields)
@@ -28,7 +41,6 @@ export default function ContactPage() {
           <form className={styles.form}>
             {fields &&
               fields.map((field) => {
-                console.log(field)
                 return <FormField key={field.id} {...field} />
               })}
             <button
@@ -44,7 +56,14 @@ export default function ContactPage() {
   )
 }
 
-function FormField({ label, type, id, placeholder, elementType, options }) {
+function FormField({
+  label,
+  type,
+  id,
+  placeholder,
+  elementType,
+  options,
+}: Field) {
   function FormElement() {
     if (elementType === 'input') {
       return (
@@ -57,20 +76,18 @@ function FormField({ label, type, id, placeholder, elementType, options }) {
       )
     } else if (elementType === 'select') {
       return (
-        <select name={name} id={id} className={styles.select}>
-          {options.map(({ option }) => {
-            return <option key={option}>{option}</option>
-          })}
+        <select id={id} className={styles.select}>
+          {options &&
+            options.map(({ option }) => <option key={option}>{option}</option>)}
         </select>
       )
     } else if (elementType === 'textarea') {
       return (
         <textarea
-          rows="10"
+          rows={10}
           className={styles.textarea}
           placeholder={placeholder}
           defaultValue="50-100 employees"
-          name={name}
           id={id}
         ></textarea>
       )
@@ -82,13 +99,13 @@ function FormField({ label, type, id, placeholder, elementType, options }) {
   return (
     <div
       className={`${styles.formField} ${
-        elementType === 'textarea' && styles.fullWidth
+        elementType === 'textarea' ? styles.fullWidth : ''
       }`}
     >
       <label htmlFor={id} className={styles.label}>
         {label}
       </label>
-      {<FormElement />}
+      <FormElement />
     </div>
   )
 }
