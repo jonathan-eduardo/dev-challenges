@@ -23,7 +23,6 @@
       "elementType": "select",
       "type": "",
       "options": [
-        { "option": "10-50 employees" },
         { "option": "50-100 employees" },
         { "option": "100-500 employees" },
         { "option": "500+ employees" }
