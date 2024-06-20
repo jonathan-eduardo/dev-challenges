@@ -31,6 +31,14 @@
       "image_src": "./thumbnails/contact-page.png",
       "solution_link": "https://devchallenges.io/solution/25343",
       "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/contact-page"
+    },
+    {
+      "id": 25465,
+      "title": "Simple Homepage",
+      "slug": "simple-homepage",
+      "image_src": "./thumbnails/simple-homepage.png",
+      "solution_link": "https://devchallenges.io/solution/25465",
+      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/simple-homepage"
     }
   ]
 }

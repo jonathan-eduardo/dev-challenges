@@ -3,6 +3,7 @@ import MinimalBlogCard from './challenges/minimal-blog-card/minimal-blog-card.ts
 import BusinessBlogCard from './challenges/business-blog-card/business-blog-card.tsx'
 import TestimonialPage from './challenges/testimonial-page/testimonial-page.tsx'
 import ContactPage from './challenges/contact-page/contact-page.tsx'
+import SimpleHomepage from './challenges/simple-homepage/simple-homepage.tsx'
 
 const routes = [
   {
@@ -24,6 +25,10 @@ const routes = [
   {
     path: '/contact-page',
     element: <ContactPage />,
+  },
+  {
+    path: '/simple-homepage',
+    element: <SimpleHomepage />,
   },
 ]
 
