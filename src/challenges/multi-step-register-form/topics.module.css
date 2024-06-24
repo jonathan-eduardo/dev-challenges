@@ -1,0 +1,33 @@
+.topics {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.topic {
+  font-size: 14px;
+  line-height: 0.875rem;
+  color: #a1a1a9;
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  border-radius: 12px;
+  background: #394150;
+  cursor: pointer;
+}
+
+.activeTopic {
+  background: #652cd1;
+  border-color: #845eee;
+  color: var(--font-color);
+}
+
+.topic input[type='checkbox'] {
+  appearance: none;
+}
+
+.topic input[type='checkbox']:checked {
+  background: #652cd1;
+  border-color: #845eee;
+  color: var(--font-color);
+}

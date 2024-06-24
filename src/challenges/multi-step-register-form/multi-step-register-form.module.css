@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.background {
+  --bg-color: #121826;
+  --border-color: #4d5562;
+  --action-color: #;
+  --font-color: #e5e7eb;
+  --label-color: #a1a1a9;
+  --default-font: 'Inter', sans-serif;
+  --content-offset: -100%;
+
+  background: var(--bg-color);
+  font-family: var(--default-font);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+ul li {
+  list-style: none;
+}
+
+.background::before,
+.background::after {
+  content: url('../images/blur-radial.svg');
+  position: absolute;
+}
+.background::before {
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.background::after {
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+.formWrapper {
+  width: 100%;
+  max-width: 456px;
+}
+
+.form {
+  margin-top: 182px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(77, 85, 98, 0.25);
+  overflow: hidden;
+}
+
+.formContent {
+  display: flex;
+  gap: 40px;
+  transition: all 0.2s;
+}
+
+.item {
+  display: block;
+  min-width: 100%;
+}
+
+.title {
+  font-size: 20px;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: var(--font-color);
+}
+
+.confirmBtn {
+  font-size: 12px;
+  line-height: 0.75rem;
+  font-family: var(--default-font);
+  background: linear-gradient(to bottom, #845eee, #652cd1);
+  border: none;
+  width: 126px;
+  font-weight: 600;
+  height: 40px;
+  color: var(--font-color);
+  margin: 36px auto 0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.confirmBtn:hover {
+  transform: scale(0.95);
+}
+
+.secondStep {
+  transform: translateX(calc(var(--content-offset) * 1 - 40px));
+}
+
+.thirdStep {
+  transform: translateX(calc(var(--content-offset) * 2 - 80px));
+}
+
+.lastStep {
+  transform: translateX(calc(var(--content-offset) * 3 - 120px));
+}
+
+.hidden {
+  display: none;
+}
+
+.successMessage {
+  padding: 16px 0;
+  color: var(--font-color);
+}
