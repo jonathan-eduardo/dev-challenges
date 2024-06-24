@@ -64,7 +64,13 @@ function Form() {
           ))}
         </div>
 
-        {step < 3 && <input className={styles.confirmBtn} type="submit" />}
+        {step < 3 && (
+          <input
+            className={styles.confirmBtn}
+            type="submit"
+            value={step === 2 ? 'Confirm' : 'Continue'}
+          />
+        )}
       </form>
       {step < 3 && <Progress step={step} steps={steps.length} />}
     </div>
