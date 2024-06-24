@@ -4,6 +4,7 @@ import BusinessBlogCard from './challenges/business-blog-card/business-blog-card
 import TestimonialPage from './challenges/testimonial-page/testimonial-page.tsx'
 import ContactPage from './challenges/contact-page/contact-page.tsx'
 import SimpleHomepage from './challenges/simple-homepage/simple-homepage.tsx'
+import MultiStepRegisterForm from './challenges/multi-step-register-form/multi-step-register-form.tsx'
 
 const routes = [
   {
@@ -29,6 +30,10 @@ const routes = [
   {
     path: '/simple-homepage',
     element: <SimpleHomepage />,
+  },
+  {
+    path: '/multi-step-register-form',
+    element: <MultiStepRegisterForm />,
   },
 ]
 

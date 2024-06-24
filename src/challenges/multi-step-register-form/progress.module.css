@@ -1,0 +1,40 @@
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  color: var(--font-color);
+  color: #394150;
+  font-size: 12px;
+  line-height: 0.75rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.stepLabel {
+  position: absolute;
+  left: -90px;
+}
+
+.steps {
+  position: relative;
+  display: flex;
+  gap: 16px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #394150;
+  box-shadow: 0 0 0 5px transparent;
+}
+
+.active {
+  background: #845eee;
+  box-shadow: 0 0 0 5px rgba(132, 94, 238, 0.3);
+}
+
+.stepCompleted {
+  background: #845eee;
+}

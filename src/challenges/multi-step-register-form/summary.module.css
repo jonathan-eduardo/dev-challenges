@@ -1,0 +1,48 @@
+.summary {
+  margin-top: 28px;
+  font-size: 16px;
+  line-height: 1rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.subtitle {
+  color: #a1a1a9;
+  font-weight: 500;
+}
+
+.info {
+  font-weight: 600;
+  color: #fff;
+  word-break: break-word;
+}
+
+.userTopics {
+  margin-top: 12px;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.userTopic {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #fff;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.userTopic::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: #e4e8eb;
+  display: inline-block;
+  border-radius: 50%;
+}

@@ -33,12 +33,12 @@
       "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/contact-page"
     },
     {
-      "id": 25465,
-      "title": "Simple Homepage",
-      "slug": "simple-homepage",
-      "image_src": "./thumbnails/simple-homepage.png",
-      "solution_link": "https://devchallenges.io/solution/25465",
-      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/simple-homepage"
+      "id": 25644,
+      "title": "Multi-step Register Form",
+      "slug": "multi-step-register-form",
+      "image_src": "./thumbnails/multi-step-register-form.png",
+      "solution_link": "https://devchallenges.io/solution/25644",
+      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/multi-step-register-form"
     }
   ]
 }
