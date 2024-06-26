@@ -1,0 +1,99 @@
+.song {
+  background-size: cover;
+  --action-color: #c93b76;
+  --song-bg: #12182699;
+  --white: #e5e7eb;
+  --gray: #4d5562;
+
+  background-color: var(--song-bg);
+  border-radius: 20px;
+  max-width: 346px;
+  padding: 20px 20px 28px;
+}
+
+.songCover {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.songInfo {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.songTitle {
+  font-size: 16px;
+  line-height: 1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.songAuthor {
+  font-size: 12px;
+  line-height: 0.75rem;
+  font-weight: 400;
+  margin-top: 6px;
+  color: var(--gray);
+}
+
+.progress {
+  margin-bottom: 36px;
+  position: relative;
+  z-index: 1;
+}
+
+.progressInfo {
+  font-size: 10px;
+  line-height: 0.625rem;
+  font-weight: 600;
+  color: var(--gray);
+  display: flex;
+  justify-content: space-between;
+}
+
+.progressBar {
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--white);
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+}
+
+.progressTrack {
+  border-radius: 4px;
+  height: 4px;
+  background: var(--action-color);
+  box-shadow: 0 4px 24px 8px rgba(201, 29, 119, 0.15);
+}
+
+.songButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transform: all 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+.playBtn {
+  background: var(--action-color);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 4px 24px 8px rgba(201, 29, 119, 0.15);
+}

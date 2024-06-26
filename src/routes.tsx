@@ -5,6 +5,7 @@ import TestimonialPage from './challenges/testimonial-page/testimonial-page.tsx'
 import ContactPage from './challenges/contact-page/contact-page.tsx'
 import SimpleHomepage from './challenges/simple-homepage/simple-homepage.tsx'
 import MultiStepRegisterForm from './challenges/multi-step-register-form/multi-step-register-form.tsx'
+import MusicPlayer from './challenges/music-player/music-player.tsx'
 
 const routes = [
   {
@@ -34,6 +35,10 @@ const routes = [
   {
     path: '/multi-step-register-form',
     element: <MultiStepRegisterForm />,
+  },
+  {
+    path: '/music-player',
+    element: <MusicPlayer />,
   },
 ]
 

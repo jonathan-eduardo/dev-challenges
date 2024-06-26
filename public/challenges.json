@@ -47,6 +47,14 @@
       "image_src": "./thumbnails/multi-step-register-form.png",
       "solution_link": "https://devchallenges.io/solution/25644",
       "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/multi-step-register-form"
+    },
+    {
+      "id": 26003,
+      "title": "Music Player",
+      "slug": "music-player",
+      "image_src": "./thumbnails/music-player.png",
+      "solution_link": "https://devchallenges.io/solution/26003",
+      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/music-player"
     }
   ]
 }
