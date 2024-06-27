@@ -55,6 +55,14 @@
       "image_src": "./thumbnails/music-player.png",
       "solution_link": "https://devchallenges.io/solution/26003",
       "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/music-player"
+    },
+    {
+      "id": 26204,
+      "title": "Random Quote",
+      "slug": "random-quote",
+      "image_src": "./thumbnails/random-quote.png",
+      "solution_link": "https://devchallenges.io/solution/26204",
+      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/random-quote"
     }
   ]
 }

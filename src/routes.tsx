@@ -6,6 +6,7 @@ import ContactPage from './challenges/contact-page/contact-page.tsx'
 import SimpleHomepage from './challenges/simple-homepage/simple-homepage.tsx'
 import MultiStepRegisterForm from './challenges/multi-step-register-form/multi-step-register-form.tsx'
 import MusicPlayer from './challenges/music-player/music-player.tsx'
+import RandomQuote from './challenges/random-quote/random-quote.tsx'
 
 const routes = [
   {
@@ -39,6 +40,10 @@ const routes = [
   {
     path: '/music-player',
     element: <MusicPlayer />,
+  },
+  {
+    path: '/random-quote',
+    element: <RandomQuote />,
   },
 ]
 
