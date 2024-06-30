@@ -7,6 +7,7 @@ import SimpleHomepage from './challenges/simple-homepage/simple-homepage.tsx'
 import MultiStepRegisterForm from './challenges/multi-step-register-form/multi-step-register-form.tsx'
 import MusicPlayer from './challenges/music-player/music-player.tsx'
 import RandomQuote from './challenges/random-quote/random-quote.tsx'
+import QrCodeGenerator from './challenges/qr-code-generator/qr-code-generator.tsx'
 
 const routes = [
   {
@@ -44,6 +45,10 @@ const routes = [
   {
     path: '/random-quote',
     element: <RandomQuote />,
+  },
+  {
+    path: '/qr-code-generator',
+    element: <QrCodeGenerator />,
   },
 ]
 
