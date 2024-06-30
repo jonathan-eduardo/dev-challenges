@@ -1,0 +1,147 @@
+.qrCodeBackground {
+  --page-bg: #111729;
+  --search-bg: #030617;
+  --qr-bg: #1e2c51;
+  --action-color: #3662e3;
+  --white: #f2f5f9;
+  --gray: #364153;
+  --default-font: 'Outfit', sans-serif;
+  --default-font-size: 16px;
+  --default-font-weight: 500;
+  --hover-color: #4b72e7;
+
+  background: var(--page-bg);
+  font-family: var(--default-font);
+}
+
+.wrapper {
+  flex-basis: 1280px;
+  height: 100vh;
+  background-image: url('../images/bg-illustration.svg');
+  background-repeat: no-repeat;
+  background-position: 85% 72px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  flex-basis: 609px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin: 0 16px;
+  margin-top: 240px;
+}
+
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+  background: var(--search-bg);
+  border: 2px solid var(--action-color);
+  border-radius: 20px;
+  padding: 6px;
+  align-items: center;
+  width: 100%;
+  height: 68px;
+}
+
+.input,
+.qrCodeBtn {
+  border: none;
+  background: transparent;
+  font-family: var(--default-font);
+
+  font-size: var(--default-font-size);
+  font-weight: var(--default-font-weight);
+}
+
+.input {
+  outline: none;
+  height: 100%;
+  padding-left: 24px;
+  color: var(--white);
+  flex: 1;
+  min-width: 132px;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: var(--gray);
+}
+
+.qrCodeBtn {
+  background: var(--action-color);
+  color: var(--white);
+  border-radius: 12px;
+  padding: 16px 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.qrCodeBtn:hover {
+  background: var(--white);
+  color: var(--action-color);
+}
+
+.qrCode {
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.qrCodeContainer {
+  border-radius: 50%;
+  background: var(--qr-bg);
+  padding: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 307px;
+}
+
+.qrCodeImage {
+  border-radius: 24px;
+}
+
+.fixedLogo {
+  margin-left: 72px;
+  margin-top: 40px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  line-height: 1rem;
+  border: none;
+  background: var(--action-color);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 40px;
+  border-radius: 12px;
+}
+
+.btn:hover {
+  background: var(--hover-color);
+}
+
+.btn:active {
+  transform: scale(1.05);
+}

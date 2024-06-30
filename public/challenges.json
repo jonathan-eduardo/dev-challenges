@@ -63,6 +63,14 @@
       "image_src": "./thumbnails/random-quote.png",
       "solution_link": "https://devchallenges.io/solution/26204",
       "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/random-quote"
+    },
+    {
+      "id": 26298,
+      "title": "QR Code Generator",
+      "slug": "qr-code-generator",
+      "image_src": "./thumbnails/qr-code-generator.png",
+      "solution_link": "https://devchallenges.io/solution/26298",
+      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/qr-code-generator"
     }
   ]
 }
