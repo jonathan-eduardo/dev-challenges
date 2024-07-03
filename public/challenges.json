@@ -71,6 +71,14 @@
       "image_src": "./thumbnails/qr-code-generator.png",
       "solution_link": "https://devchallenges.io/solution/26298",
       "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/qr-code-generator"
+    },
+    {
+      "id": 26488,
+      "title": "Guess The Word Game",
+      "slug": "guess-the-word-game",
+      "image_src": "./thumbnails/guess-the-word-game.png",
+      "solution_link": "https://devchallenges.io/solution/26488",
+      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/guess-the-word-game"
     }
   ]
 }
