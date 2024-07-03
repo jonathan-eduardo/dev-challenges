@@ -8,6 +8,7 @@ import MultiStepRegisterForm from './challenges/multi-step-register-form/multi-s
 import MusicPlayer from './challenges/music-player/music-player.tsx'
 import RandomQuote from './challenges/random-quote/random-quote.tsx'
 import QrCodeGenerator from './challenges/qr-code-generator/qr-code-generator.tsx'
+import GuessTheWordGame from './challenges/guess-the-word-game/guess-the-word-game.tsx'
 
 const routes = [
   {
@@ -49,6 +50,10 @@ const routes = [
   {
     path: '/qr-code-generator',
     element: <QrCodeGenerator />,
+  },
+  {
+    path: '/guess-the-word-game',
+    element: <GuessTheWordGame />,
   },
 ]
 

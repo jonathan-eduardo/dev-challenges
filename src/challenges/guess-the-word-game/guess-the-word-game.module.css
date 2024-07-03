@@ -1,0 +1,187 @@
+.guessTheWordGameBackground {
+  --default-font: 'Outfit', sans-serif;
+  --white: #f2f5f9;
+  --black: #030616;
+  --dark-blue: #1f2839;
+  --light-gray: #97a3b6;
+  --gray: #4a5567;
+  --pink: #c951e7;
+  --secondary-purple: #672171;
+  --purple: #7429c6;
+  --success-color: #25ff25;
+  --error-color: #fa2929;
+  --game-bg-gradient: linear-gradient(130deg, var(--black), var(--dark-blue));
+
+  background: linear-gradient(to right, var(--purple), var(--pink));
+  font-family: var(--default-font);
+}
+
+.container {
+  flex-basis: 1280px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+.container::after {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  content: 'Guess the word';
+  color: rgba(242, 245, 249, 0.3);
+  font-size: 200px;
+  line-height: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  z-index: -1;
+}
+
+.display {
+  flex-basis: 417px;
+  border-radius: 12px;
+  background: var(--game-bg-gradient);
+  display: flex;
+  flex-direction: column;
+  padding: 24px 26px 32px;
+  align-items: center;
+  margin: 180px 16px 0;
+}
+
+.scrambledWordContainer {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gray);
+  margin: 24px 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 0px var(--black);
+}
+
+.scrambledWord {
+  font-size: 32px;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.875rem;
+  text-align: center;
+  color: var(--light-gray);
+}
+
+.gameInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 500;
+}
+
+.tries {
+  display: flex;
+  align-items: center;
+}
+
+.triesLabel,
+.mistakesLabel {
+  font-size: 12px;
+  line-height: 0.75rem;
+  color: var(--gray);
+}
+
+.mistakesLetters {
+  margin-left: 4px;
+  font-size: 16px;
+  line-height: 1.25rem;
+  color: var(--light-gray);
+}
+
+.letters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin: 52px 0;
+}
+
+.letter {
+  text-transform: lowercase;
+  font-family: var(--default-font);
+  font-size: 20px;
+  background: transparent;
+  font-weight: 500;
+  line-height: 1.25rem;
+  padding: 6px;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid var(--gray);
+  color: var(--white);
+  outline: none;
+  width: 44px;
+}
+
+.letter:focus {
+  border-color: var(--secondary-purple);
+  caret-color: transparent;
+}
+
+.letter::placeholder {
+  color: transparent;
+}
+
+.letter:focus::placeholder {
+  color: var(--white);
+}
+
+.letter.error {
+  border-color: var(--error-color);
+}
+
+.letter.success {
+  border-color: var(--success-color);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 16px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  font-family: var(--default-font);
+  background: var(--pink);
+  font-size: 14px;
+  color: var(--white);
+  font-weight: 500;
+  line-height: 0.875rem;
+  border-bottom: 4px solid var(--purple);
+  padding: 12px 36px;
+  cursor: pointer;
+}
+
+.btn:active {
+  border: none;
+}
+
+.triesProgress {
+  display: flex;
+  gap: 6px;
+  margin-left: 8px;
+}
+
+.progressCircle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gray);
+}
+
+.progressCircle.filled {
+  background: var(--purple);
+}
