@@ -79,6 +79,14 @@
       "image_src": "./thumbnails/guess-the-word-game.png",
       "solution_link": "https://devchallenges.io/solution/26488",
       "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/guess-the-word-game"
+    },
+    {
+      "id": 26757,
+      "title": "Simple Coffee Listing",
+      "slug": "simple-coffee-listing",
+      "image_src": "./thumbnails/simple-coffee-listing.png",
+      "solution_link": "https://devchallenges.io/solution/26757",
+      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/simple-coffee-listing"
     }
   ]
 }

@@ -9,6 +9,7 @@ import MusicPlayer from './challenges/music-player/music-player.tsx'
 import RandomQuote from './challenges/random-quote/random-quote.tsx'
 import QrCodeGenerator from './challenges/qr-code-generator/qr-code-generator.tsx'
 import GuessTheWordGame from './challenges/guess-the-word-game/guess-the-word-game.tsx'
+import SimpleCoffeeListing from './challenges/simple-coffee-listing/simple-coffee-listing.tsx'
 
 const routes = [
   {
@@ -54,6 +55,10 @@ const routes = [
   {
     path: '/guess-the-word-game',
     element: <GuessTheWordGame />,
+  },
+  {
+    path: '/simple-coffee-listing',
+    element: <SimpleCoffeeListing />,
   },
 ]
 
