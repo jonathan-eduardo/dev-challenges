@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.simpleCoffeeListingBackground {
+  --default-font: 'DM Sans', sans-serif;
+  --white: #fef7ee;
+
+  --dark-blue: #1b1d1f;
+  --page-bg: #111315;
+  --brown: #302521;
+  --gray: #6f757c;
+
+  --salmon: #ed735d;
+  --yellow: #f6c768;
+  --light-green: #bee3cc;
+
+  font-family: var(--default-font);
+  background-color: var(--page-bg);
+
+  position: relative;
+}
+
+.simpleCoffeeListingBackground::before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 300px;
+  z-index: 0;
+  background-image: url('./assets/bg-cafe.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  position: fixed;
+}
+
+.container {
+  z-index: 1;
+  flex-basis: 1280px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.coffeeCollection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 16px;
+  margin: 160px 16px;
+  max-width: 1094px;
+  background: var(--dark-blue);
+  border-radius: 12px;
+}
+
+.coffees {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  z-index: 1;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.313rem;
+  font-weight: 500;
+  color: var(--gray);
+  max-width: 478px;
+  margin-top: 12px;
+  position: relative;
+  z-index: 0;
+}
+
+.description::after {
+  position: absolute;
+  content: url('./assets/vector.svg');
+  top: -108px;
+  right: -16px;
+  z-index: -1;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 6px;
+}
+
+.btn {
+  border: none;
+  font-family: var(--default-font);
+  font-size: 14px;
+  line-height: 0.875rem;
+  font-weight: 700;
+  color: var(--white);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--gray);
+}
+
+/* Card Styles */
+
+.card {
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.cardImageWrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.cardImage {
+  border-radius: 12px;
+  object-fit: cover;
+  flex: 1;
+}
+
+.cardTag {
+  font-size: 10px;
+  line-height: 0.625rem;
+  font-weight: 700;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  padding: 6px 12px;
+  background: var(--yellow);
+  color: var(--brown);
+  border-radius: 12px;
+}
+
+.cardInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0 8px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  line-height: 1rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.cardPrice {
+  font-size: 12px;
+  line-height: 0.75rem;
+  font-weight: 700;
+  background: var(--light-green);
+  padding: 6px 8px;
+  border-radius: 4px;
+  color: var(--dark-blue);
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardRating {
+  display: flex;
+  align-items: center;
+}
+
+.rating {
+  font-size: 14px;
+  line-height: 0.875rem;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.ratingValue {
+  color: var(--white);
+}
+
+.votes {
+  color: var(--gray);
+}
+
+.cardAvailable {
+  font-size: 14px;
+  color: var(--salmon);
+  line-height: 0.875rem;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .coffeeCollection {
+    padding: 80px 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .coffeeCollection {
+    padding: 80px 80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .coffeeCollection {
+    padding: 80px 124px;
+  }
+}
