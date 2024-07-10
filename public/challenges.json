@@ -87,6 +87,14 @@
       "image_src": "./thumbnails/simple-coffee-listing.png",
       "solution_link": "https://devchallenges.io/solution/26757",
       "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/simple-coffee-listing"
+    },
+    {
+      "id": 26789,
+      "title": "Translate App",
+      "slug": "translate-app",
+      "image_src": "./thumbnails/translate-app.png",
+      "solution_link": "https://devchallenges.io/solution/26789",
+      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/translate-app"
     }
   ]
 }
