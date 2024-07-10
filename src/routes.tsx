@@ -62,10 +62,6 @@ const routes = [
     element: <SimpleCoffeeListing />,
   },
   {
-    path: '/simple-coffee-listing',
-    element: <SimpleCoffeeListing />,
-  },
-  {
     path: '/translate-app',
     element: <TranslateApp />,
   },
