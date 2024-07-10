@@ -10,6 +10,7 @@ import RandomQuote from './challenges/random-quote/random-quote.tsx'
 import QrCodeGenerator from './challenges/qr-code-generator/qr-code-generator.tsx'
 import GuessTheWordGame from './challenges/guess-the-word-game/guess-the-word-game.tsx'
 import SimpleCoffeeListing from './challenges/simple-coffee-listing/simple-coffee-listing.tsx'
+import TranslateApp from './challenges/translate-app/translate-app.tsx'
 
 const routes = [
   {
@@ -59,6 +60,10 @@ const routes = [
   {
     path: '/simple-coffee-listing',
     element: <SimpleCoffeeListing />,
+  },
+  {
+    path: '/translate-app',
+    element: <TranslateApp />,
   },
 ]
 

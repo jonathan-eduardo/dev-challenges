@@ -1,0 +1,200 @@
+.translateAppBackground {
+  --default-font: 'DM Sans', sans-serif;
+  --black: #040711;
+  --bg-100: #212936cc;
+  --bg-200: #121826cc;
+  --gray-100: #394050;
+  --gray-200: #4d5562;
+  --gray-300: #6c7280;
+  --white: #f9fafb;
+  --action-color: #3762e4;
+  --action-color-light: #7ca9f3;
+
+  background-image: url('./assets/hero_img.jpg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: contain;
+  background-color: var(--black);
+
+  font-family: var(--default-font);
+}
+
+.container {
+  flex-basis: 1280px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 92px 0 52px;
+}
+
+.fields {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 0 16px;
+}
+
+.translateContainer {
+  padding: 24px;
+  background: var(--bg-100);
+  border-radius: 12px;
+  border: 1px solid var(--gray-200);
+  flex-basis: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rightContainer {
+  background: var(--bg-200);
+}
+
+.languageHeader {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.defaultLanguages {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.languageButton,
+.languageSelect,
+.actionBtn,
+.languageText {
+  font-family: var(--default-font);
+  cursor: pointer;
+}
+
+.languageButton {
+  background: none;
+  border: none;
+  font-size: 16px;
+  line-height: 1rem;
+  font-weight: 700;
+  color: var(--gray-300);
+  padding: 10px 12px;
+  border-radius: 12px;
+  text-wrap: nowrap;
+}
+
+.languageButton.active {
+  background: var(--gray-200);
+  color: var(--white);
+}
+
+.languageText {
+  font-size: 16px;
+  line-height: 1rem;
+  font-weight: 700;
+  margin-top: 24px;
+  border: none;
+  background: transparent;
+  width: 100%;
+  min-height: 124px;
+  cursor: text;
+  outline: none;
+  color: var(--white);
+  resize: none;
+}
+
+.languageFooter {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondaryActions {
+  display: flex;
+  gap: 8px;
+}
+
+.characterCount {
+  font-size: 12px;
+  line-height: 0.75rem;
+  font-weight: 500;
+  color: var(--gray-300);
+  align-self: flex-end;
+}
+
+.languageActions {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 38px;
+}
+
+.languageActions.mainBox {
+  padding-top: 12px;
+}
+
+.actionBtn {
+  border: 2px solid var(--gray-200);
+  border-radius: 12px;
+  padding: 6px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swapBtn {
+  margin-left: auto;
+}
+
+.translateButton {
+  font-family: var(--default-font);
+  font-size: 16px;
+  line-height: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--action-color);
+  border: 1px solid var(--action-color-light);
+  padding: 12px 24px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.translateButton:hover {
+  border-color: var(--action-color);
+}
+
+@media (max-width: 1024px) {
+  .fields {
+    flex-wrap: wrap;
+    margin: 0 72px;
+  }
+
+  .defaultLanguages {
+    gap: 6px;
+  }
+
+  .translateContainer {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .fields {
+    margin: 0 24px 24px;
+  }
+  .detectButton {
+    display: none;
+  }
+
+  .defaultLanguages {
+    gap: 2px;
+  }
+}
