@@ -1,0 +1,41 @@
+.githubProfileBackground {
+  --primary-font: 'Outfit', sans-serif;
+  --secondary-font: 'Be Vietnam Pro', sans-serif;
+
+  --blue-100: #1d1b48;
+  --blue-200: #111729;
+  --blue-300: #3662e3;
+  --gray-100: #cdd5e0;
+  --gray-200: #4a5567;
+  --gray-300: #364153;
+  --gray-400: #20293a;
+  --gray-500: #98a3b7;
+
+  --card-bg: linear-gradient(to right, var(--blue-200), var(--blue-100));
+  font-family: var(--primary-font);
+  background-color: var(--gray-400);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header {
+  min-height: 240px;
+  width: 100%;
+  background-image: url('./assets/hero-image-github-profile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.noResults {
+  margin-top: 24px;
+  color: var(--gray-100);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+}

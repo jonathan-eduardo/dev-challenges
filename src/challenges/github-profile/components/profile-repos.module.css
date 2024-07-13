@@ -1,0 +1,82 @@
+.profileRepositories {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.repositoryInfo {
+  font-family: var(--primary-font);
+  background: var(--card-bg);
+  padding: 20px;
+  flex-basis: 472px;
+  border-radius: 12px;
+}
+
+.repositoryName {
+  text-decoration: none;
+  color: var(--gray-100);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.25rem;
+}
+
+.repositoryName:hover {
+  text-decoration: underline;
+}
+
+.repositoryDescription {
+  font-size: 16px;
+  line-height: 1.25rem;
+  font-weight: 400;
+  margin: 16px 0 20px;
+  color: var(--gray-500);
+}
+
+.repositoryStatistics {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--gray-500);
+}
+
+.repositoryStat {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.lastUpdated {
+  font-size: 12px;
+  line-height: 0.75rem;
+  font-weight: 500;
+  margin-left: 12px;
+}
+
+.showAllRepositoriesBtn {
+  font-family: var(--primary-font);
+  cursor: pointer;
+  display: block;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1rem;
+  font-weight: 500;
+  color: var(--gray-500);
+  text-align: center;
+  margin: 0 auto 48px;
+}
+
+@media (max-width: 1024px) {
+  .repositoryInfo {
+    flex: 1;
+    width: 100%;
+  }
+  .profileRepositories {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

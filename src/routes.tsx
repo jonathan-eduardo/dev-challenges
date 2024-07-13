@@ -11,6 +11,7 @@ import QrCodeGenerator from './challenges/qr-code-generator/qr-code-generator.ts
 import GuessTheWordGame from './challenges/guess-the-word-game/guess-the-word-game.tsx'
 import SimpleCoffeeListing from './challenges/simple-coffee-listing/simple-coffee-listing.tsx'
 import TranslateApp from './challenges/translate-app/translate-app.tsx'
+import GithubProfile from './challenges/github-profile/github-profile.tsx'
 
 const routes = [
   {
@@ -64,6 +65,10 @@ const routes = [
   {
     path: '/translate-app',
     element: <TranslateApp />,
+  },
+  {
+    path: '/github-profile',
+    element: <GithubProfile />,
   },
 ]
 

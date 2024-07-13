@@ -95,6 +95,14 @@
       "image_src": "./thumbnails/translate-app.png",
       "solution_link": "https://devchallenges.io/solution/26789",
       "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/translate-app"
+    },
+    {
+      "id": 27219,
+      "title": "Github Profile",
+      "slug": "github-profile",
+      "image_src": "./thumbnails/github-profile.png",
+      "solution_link": "https://devchallenges.io/solution/27219",
+      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/github-profile"
     }
   ]
 }

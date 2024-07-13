@@ -1,0 +1,91 @@
+.searchField {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  flex-basis: 484px;
+  background: var(--gray-400);
+  gap: 12px;
+  position: relative;
+  margin: 32px 16px 0;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 12px;
+
+  flex: 1;
+}
+
+.inputWrapper.active {
+  border-color: var(--blue-300);
+}
+
+.searchIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 16px;
+  z-index: 0;
+}
+
+.searchInput {
+  border: none;
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  line-height: 1rem;
+  font-weight: 500;
+  color: var(--gray-100);
+  background: transparent;
+  padding: 16px;
+  padding-left: 52px;
+  outline: none;
+  flex: 1;
+  z-index: 1;
+}
+
+.searchInput::placeholder {
+  color: var(--gray-200);
+}
+
+.searchResult {
+  width: 100%;
+  position: absolute;
+  padding: 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--blue-200);
+  top: 100%;
+  margin-top: 8px;
+  font-family: var(--secondary-font);
+  cursor: pointer;
+}
+
+.userAvatar {
+  width: 72px;
+  border-radius: 12px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.userName {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1rem;
+  color: var(--gray-100);
+}
+
+.userBio {
+  font-size: 12px;
+  line-height: 0.75rem;
+  font-weight: 400;
+  color: var(--gray-200);
+}
