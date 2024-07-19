@@ -12,6 +12,8 @@ import GuessTheWordGame from './challenges/guess-the-word-game/guess-the-word-ga
 import SimpleCoffeeListing from './challenges/simple-coffee-listing/simple-coffee-listing.tsx'
 import TranslateApp from './challenges/translate-app/translate-app.tsx'
 import GithubProfile from './challenges/github-profile/github-profile.tsx'
+import CountryPage from './challenges/country-page/country-page.tsx'
+import CountryDetails from './challenges/country-page/components/country-details/country-details.tsx'
 
 const routes = [
   {
@@ -69,6 +71,16 @@ const routes = [
   {
     path: '/github-profile',
     element: <GithubProfile />,
+  },
+  {
+    path: '/country-page',
+    element: <CountryPage />,
+    children: [
+      {
+        path: ':country',
+        element: <CountryDetails />,
+      },
+    ],
   },
 ]
 

@@ -1,0 +1,38 @@
+.search {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--gray-300);
+  flex-basis: 342px;
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 8px;
+}
+
+.searchInput {
+  font-family: var(--default-font);
+  border: none;
+  outline: none;
+  padding: 14px;
+  background: transparent;
+  color: var(--gray-100);
+  padding-left: 44px;
+  z-index: 1;
+  flex: 1;
+}
+
+.searchInput::placeholder {
+  color: var(--gray-200);
+}
+
+@media (max-width: 640px) {
+  .search {
+    flex: 1;
+  }
+}

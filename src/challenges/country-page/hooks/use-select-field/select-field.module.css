@@ -1,0 +1,66 @@
+.selectContainer {
+  --default-font-family: 'DM Sans', sans-serif;
+  font-family: var(--default-font-family);
+  position: relative;
+}
+
+.selectLabel {
+  color: var(--gray-200);
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 0.75rem;
+  font-weight: 700;
+}
+
+.selected {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--gray-300);
+  border-radius: 12px;
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+.selectedOption {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 0.875rem;
+  color: var(--gray-100);
+}
+
+.selectOptions {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--gray-300);
+  border-radius: 12px;
+  font-weight: 500;
+  color: var(--gray-100);
+  width: 100%;
+  overflow: hidden;
+  top: 100%;
+}
+
+.selectIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.selectIcon.open {
+  transform: rotate(-180deg);
+}
+
+.selectOption {
+  cursor: pointer;
+  padding: 12px 14px;
+  transition: all 0.3s;
+}
+
+.selectOption:hover {
+  background: var(--gray-200);
+}
