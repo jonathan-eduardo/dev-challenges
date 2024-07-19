@@ -1,0 +1,122 @@
+.countryPageBackground {
+  --default-font: 'Be Vietnam Pro', sans-serif;
+  --gray-100: #d2d5da;
+  --gray-200: #6c727f;
+  --gray-300: #282b30;
+  --gray-400: #1b1d1f;
+
+  --blue-100: #4e80ee;
+
+  background: var(--gray-400);
+  font-family: var(--default-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.countryPageBackground::before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 300px;
+  z-index: 0;
+  background-image: url('./assets/hero-image-wr.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  position: fixed;
+}
+
+.largeText {
+  font-size: 32px;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.mediumText {
+  font-size: 16px;
+  line-height: 1rem;
+  font-weight: 600;
+}
+
+.smallText {
+  font-size: 14px;
+  line-height: 0.875rem;
+  font-weight: 500;
+}
+
+.extraSmallText {
+  font-size: 12px;
+  line-height: 0.75rem;
+  font-weight: 500;
+}
+
+.container {
+  z-index: 1;
+  flex-basis: 1280px;
+  min-height: 100vh;
+}
+
+.header {
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.mainContent {
+  flex: 1;
+  margin: 0 40px 24px;
+  background: var(--gray-400);
+  border-radius: 12px;
+  border: 1px solid var(--gray-300);
+  padding: 24px 32px;
+}
+
+.contentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 42px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.countriesFound {
+  color: #6c727f;
+}
+
+.content {
+  display: flex;
+  gap: 32px;
+}
+
+.sidebar {
+  flex-basis: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (max-width: 1024px) {
+  .mainContent {
+    margin: 0;
+    border-radius: 0;
+  }
+  .content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .mainContent {
+    padding: 12px 16px;
+  }
+}

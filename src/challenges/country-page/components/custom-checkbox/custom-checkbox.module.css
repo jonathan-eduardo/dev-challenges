@@ -1,0 +1,56 @@
+.customCheckboxContainer {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.customCheckboxOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.customCheckboxLabel {
+  font-size: 12px;
+  line-height: 0.75rem;
+  font-weight: 700;
+  color: var(--gray-200);
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.optionLabel {
+  font-size: 14px;
+  line-height: 0.875rem;
+  font-weight: 700;
+  color: var(--gray-100);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.optionInput {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--gray-200);
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.optionInput:checked {
+  background-color: var(--blue-100);
+  border-color: var(--blue-100);
+}
+
+.optionInput:checked:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url('../../assets/Done_round.svg') no-repeat left center;
+}
