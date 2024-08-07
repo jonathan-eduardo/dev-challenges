@@ -32,6 +32,7 @@ export default function CountryQuiz() {
       const data = await response.json()
       setCountries(data)
     }
+    resetGame()
     fetchCountries()
   }, [])
 
@@ -116,33 +117,35 @@ export default function CountryQuiz() {
   return (
     <section className={styles.countryQuizBackground}>
       <div className={styles.countryQuizContainer}>
-        {step < 10 && question ? (
-          <div className={styles.quizContent}>
-            <h1 className={styles.quizTitle}>Country Quiz</h1>
-            <QuizSteps currentIndex={step} />
-            <div className={styles.quizQuestion}>
-              <h2 className={styles.questionTitle}>{question.title}</h2>
-              <div className={styles.questionAnswers}>
-                {question.options.map((option, i) => (
-                  <button
-                    disabled={answered}
-                    key={i}
-                    className={`${styles.quizButton}`}
-                    onClick={() => handleQuestion(option)}
-                  >
-                    <span
-                      className={`${styles.answerText} ${handleAnswerClasses(
-                        option.name.common,
-                        question.answer.name.common
-                      )}`}
+        {step < 10 ? (
+          question && (
+            <div className={styles.quizContent}>
+              <h1 className={styles.quizTitle}>Country Quiz</h1>
+              <QuizSteps currentIndex={step} />
+              <div className={styles.quizQuestion}>
+                <h2 className={styles.questionTitle}>{question.title}</h2>
+                <div className={styles.questionAnswers}>
+                  {question.options.map((option, i) => (
+                    <button
+                      disabled={answered}
+                      key={i}
+                      className={`${styles.quizButton}`}
+                      onClick={() => handleQuestion(option)}
                     >
-                      {option.name.common}
-                    </span>
-                  </button>
-                ))}
+                      <span
+                        className={`${styles.answerText} ${handleAnswerClasses(
+                          option.name.common,
+                          question.answer.name.common
+                        )}`}
+                      >
+                        {option.name.common}
+                      </span>
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
+          )
         ) : (
           <div className={styles.quizResults}>
             <QuizResultsIcon />
