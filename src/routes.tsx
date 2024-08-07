@@ -14,6 +14,7 @@ import TranslateApp from './challenges/translate-app/translate-app.tsx'
 import GithubProfile from './challenges/github-profile/github-profile.tsx'
 import CountryPage from './challenges/country-page/country-page.tsx'
 import CountryDetails from './challenges/country-page/components/country-details/country-details.tsx'
+import CountryQuiz from './challenges/country-quiz/country-quiz.tsx'
 
 const routes = [
   {
@@ -81,6 +82,10 @@ const routes = [
         element: <CountryDetails />,
       },
     ],
+  },
+  {
+    path: '/country-quiz',
+    element: <CountryQuiz />,
   },
 ]
 
