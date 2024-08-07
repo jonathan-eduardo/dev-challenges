@@ -111,6 +111,14 @@
       "image_src": "./thumbnails/country-page.png",
       "solution_link": "https://devchallenges.io/solution/27668",
       "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/country-page"
+    },
+    {
+      "id": 28197,
+      "title": "Country Quiz",
+      "slug": "country-quiz",
+      "image_src": "./thumbnails/country-quiz.png",
+      "solution_link": "https://devchallenges.io/solution/28197",
+      "github_link": "https://github.com/jonathan-eduardo/dev-challenges/tree/country-quiz"
     }
   ]
 }
